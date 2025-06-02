@@ -1,0 +1,114 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Dark Elegant Background */
+body {
+  background: radial-gradient(circle at top left, #1f1c2c, #302b63, #24243e);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+/* Quiz Container with Glass Effect */
+.quiz-container {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 35px 30px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Title */
+.quiz-container h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  background: linear-gradient(to right, #f9d423, #ff4e50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Question Styling */
+#question-container {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #f1f1f1;
+}
+
+/* Answer Buttons */
+#answers-container button {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 12px 18px;
+  width: 100%;
+  margin: 10px 0;
+  font-size: 16px;
+  color: #eee;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#answers-container button:hover {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #fff;
+  transform: scale(1.02);
+}
+
+/* Info Panel */
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #bbb;
+  padding: 0 5px;
+}
+
+/* Next Button */
+#next-btn {
+  margin-top: 25px;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  border: none;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 18px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px #ff4b2b;
+  display: none;
+}
+
+#next-btn:hover {
+  background: linear-gradient(135deg, #ff6a89, #ff7c53);
+  box-shadow: 0 0 12px #ff7c53;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
